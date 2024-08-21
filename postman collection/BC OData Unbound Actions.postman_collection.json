@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "606a1dea-b0ca-43c6-96a6-6bc8677005c1",
+		"name": "BC OData Unbound Actions",
+		"description": "This collection is a sample of how to use Odata Unbound actions in Business Central.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3535366"
+	},
+	"item": [
+		{
+			"name": "Metadata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/{{tenantid}}/Sandbox/ODataV4/$metadata",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"{{tenantid}}",
+						"Sandbox",
+						"ODataV4",
+						"$metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WelcomeMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/{{tenantid}}/Sandbox/ODataV4/SDHOdataAPI_GetWelcomeMessage",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"{{tenantid}}",
+						"Sandbox",
+						"ODataV4",
+						"SDHOdataAPI_GetWelcomeMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Item Last Modified",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemNo\" : \"1953-W\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/{{tenantid}}/Sandbox/ODataV4/SDHOdataAPI_GetItemLastModified?company={{companyid}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"{{tenantid}}",
+						"Sandbox",
+						"ODataV4",
+						"SDHOdataAPI_GetItemLastModified"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "{{companyid}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Item Json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemNo\" : \"1953-W\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/{{tenantid}}/Sandbox/ODataV4/SDHOdataAPI_GetItemJson?Company={{companyid}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"{{tenantid}}",
+						"Sandbox",
+						"ODataV4",
+						"SDHOdataAPI_GetItemJson"
+					],
+					"query": [
+						{
+							"key": "Company",
+							"value": "{{companyid}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Item Inventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemNo\" : \"1953-W\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/{{tenantid}}/Sandbox/ODataV4/SDHOdataAPI_GetItemInventory?Company={{companyid}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"{{tenantid}}",
+						"Sandbox",
+						"ODataV4",
+						"SDHOdataAPI_GetItemInventory"
+					],
+					"query": [
+						{
+							"key": "Company",
+							"value": "{{companyid}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get First Item Description",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/{{tenantid}}/Sandbox/ODataV4/SDHOdataAPI_GetFirstItemDescription?Company={{companyid}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"{{tenantid}}",
+						"Sandbox",
+						"ODataV4",
+						"SDHOdataAPI_GetFirstItemDescription"
+					],
+					"query": [
+						{
+							"key": "Company",
+							"value": "{{companyid}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "scope",
+				"value": "{{scope}}",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{secret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{clientid}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{accesstokenurl}}",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "{{authurl}}",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "{{callbackurl}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "callbackurl",
+			"value": "https://businesscentral.dynamics.com/OAuthLanding.htm",
+			"type": "string"
+		},
+		{
+			"key": "authurl",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "accesstokenurl",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "clientid",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "secret",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "scope",
+			"value": "https://api.businesscentral.dynamics.com/.default",
+			"type": "string"
+		},
+		{
+			"key": "baseurl",
+			"value": "https://api.businesscentral.dynamics.com/v2.0",
+			"type": "string"
+		},
+		{
+			"key": "tenantid",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "companyid",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "0e7b713f-0a40-4285-b33e-c7fa9be378f3",
+  "name": "OData Unbound Action",
+  "publisher": "Saurav Dhyani",
+  "version": "1.0.0.0",
+  "brief": "Business Central OData Unbound Actions",
+  "description": "This Repo Contains a Sample for Business Central OData Unbound Actions",
+  "privacyStatement": "https://www.sauravdhyani.com",
+  "EULA": "https://www.sauravdhyani.com",
+  "help": "https://www.sauravdhyani.com",
+  "url": "https://www.sauravdhyani.com",
+  "logo": "image/sauravdhyani.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

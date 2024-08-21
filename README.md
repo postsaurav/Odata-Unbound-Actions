@@ -1,6 +1,19 @@
 # Odata Unbound Actions
 This Repo Contains a Sample for Business Central OData Unbound Actions
 
+# How to use Postman Collection
+> From folder Postman collection, use the json file.
+> * Import that file in Postman.
+> * Under BC OData Unbound Action, in variables tab set parameters listed below.
+> * authurl
+> * accesstokenurl
+> * clientid
+> * secret
+> * tenantid
+> * companyid
+
+![image](/image/postman_setup.jpg)
+
 # Video Tutorial
 [![[Check Here](https://www.youtube.com/c/SauravDhyani)](https://img.youtube.com/vi/H9r7f5qrxQw/0.jpg)](https://www.youtube.com/watch?v=H9r7f5qrxQw)
 
